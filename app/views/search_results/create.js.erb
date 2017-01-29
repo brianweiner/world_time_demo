@@ -1,5 +1,5 @@
 if ($('.search-result').length === 0) {
-  $("#previous_searches_container").empty();
+  $("#searches_container").empty();
 }
 $("#searches_container").prepend("<%= escape_javascript(render partial: 'search_result', locals: {search_result: @search_result}) %>");
 $("#new_search_result")[0].reset();
