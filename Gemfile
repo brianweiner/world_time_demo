@@ -40,10 +40,11 @@ gem 'jbuilder', '~> 2.5'
 
 ## Third Party Libraries
 
-gem 'countries', :require => 'countries/global'     ## gives us an ISO-3166 compatible list of countries, regions, states
 gem 'geokit-rails'                                  ## wrapper for geokit gem 
 gem 'timezone'
 gem 'display_case'                                  ## we used a modified version of this at STAQ and it helps to separate logic from the view layer
+gem 'devise'
+gem 'wikipedia-client'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -66,7 +67,10 @@ group :test do
   gem 'rspec-mocks'
   gem 'rspec-its'
   gem 'shoulda-matchers'
+  gem 'database_cleaner'
   gem 'rails-controller-testing'
+  gem 'factory_girl_rails', '~> 4.0'
+  gem 'faker'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
