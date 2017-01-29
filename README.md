@@ -16,3 +16,5 @@ Things of note:
 
 * Creation of the SearchResults is a bit slow because of the multiple wiki calls and geokit. In a real application it would be a delayed job.
 
+* Similarly some of the tests are slow so normally we'd use VCR and record the API responses for storage
+
