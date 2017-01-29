@@ -1,0 +1,10 @@
+<div id="search_result_<%=search_result.id%>" class="search-result col-md-4">
+  <div class="search-result-contents">
+    <p><%= search_result.city_link(self) %></p>
+    <p><%= search_result.state_link(self) %></p>
+    <p><%= search_result.country_link(self) %></p>
+    <p>Search Term: <%= search_result.search_term_link(self) %>
+    <p><%= search_result.local_time %> <%= search_result.dst_icon(self) %></p>
+    <p><%= search_result.timezone_name %></p>
+  </div>
+</div>

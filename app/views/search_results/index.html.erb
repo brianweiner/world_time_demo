@@ -1,0 +1,17 @@
+<div id="search_index_container" class="container">
+  <div class="jumbotron">
+    <div class="container">
+      <h3>Hello! You can input a city, state, province, postal code, or even a famous landmark to find the local time.</h3>
+      <%= render partial: 'new', locals: { search_result: SearchResult.new } %>
+    </div>
+  </div>
+</div>
+<div id="searches_container_wrapper" class="container">
+  <div id="searches_container">
+    <%= render(@previous_searches) || "Nobody has searched for any regions yet" %>
+  </div>
+</div>
+
+
+
+

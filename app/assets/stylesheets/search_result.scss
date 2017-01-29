@@ -1,0 +1,32 @@
+#searches_container {
+  padding-left: 2%;
+  .search-result {
+    display: flex;
+    margin-bottom: 2%;
+
+    .search-result-contents {
+      align-self: center;
+      height: 200px;
+      width: 300px;  
+      padding: 5%;
+      background-color: #EEEEEE;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      border:4px solid #393A40;
+    }
+  }  
+}
+
+form#new_search_result {
+  .error-field {
+    color: red;
+    padding-bottom: 2%;
+  }
+}
+
+#searches_container_wrapper {
+  h3 {
+    padding-bottom: 2%;
+  }
+}

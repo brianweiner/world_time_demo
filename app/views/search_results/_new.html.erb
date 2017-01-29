@@ -1,0 +1,7 @@
+<%= form_for search_result, remote: true do |f| %>
+  <div class="form-group">
+    <%= f.text_field :search_term, placeholder: 'London', class: "form-control search-input" %>
+  </div>
+  <div class='error-field'></div>
+  <%= f.submit 'Find Timezone', class: 'btn-lg btn-success' %>
+<% end %>

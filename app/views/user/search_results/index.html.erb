@@ -1,0 +1,7 @@
+<div id="searches_container_wrapper" class="container">
+
+  <h3>Your Previous Searches</h3>
+  <div id="searches_container" class="row">
+    <%= render(partial: 'search_results/search_result', collection: @previous_searches) || "You haven't searched for any regions yet" %>
+  </div>
+</div>
